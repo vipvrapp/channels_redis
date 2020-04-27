@@ -1,0 +1,13 @@
+version: "3.7"
+  # Runs a local redis version.
+services:
+  redis:
+    image: redis:5.0.9
+    volumes:
+      - /var/lib/redis/data
+  channels:
+    image: channels:dev-latest
+    build:
+      context: .
+    volumes:
+      - .:/app
