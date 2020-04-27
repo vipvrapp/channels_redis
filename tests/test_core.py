@@ -8,19 +8,19 @@ from async_generator import async_generator, yield_
 from asgiref.sync import async_to_sync
 from channels_redis.core import ChannelFull, ConnectionPool, RedisChannelLayer
 
-TEST_HOSTS = [("localhost", 6379)]
+TEST_HOSTS = [("redis", 6379)]
 
 MULTIPLE_TEST_HOSTS = [
-    "redis://localhost:6379/0",
-    "redis://localhost:6379/1",
-    "redis://localhost:6379/2",
-    "redis://localhost:6379/3",
-    "redis://localhost:6379/4",
-    "redis://localhost:6379/5",
-    "redis://localhost:6379/6",
-    "redis://localhost:6379/7",
-    "redis://localhost:6379/8",
-    "redis://localhost:6379/9",
+    "redis://redis:6379/0",
+    "redis://redis:6379/1",
+    "redis://redis:6379/2",
+    "redis://redis:6379/3",
+    "redis://redis:6379/4",
+    "redis://redis:6379/5",
+    "redis://redis:6379/6",
+    "redis://redis:6379/7",
+    "redis://redis:6379/8",
+    "redis://redis:6379/9",
 ]
 
 
