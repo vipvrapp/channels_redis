@@ -2,7 +2,8 @@ version: "3.7"
   # Runs a local redis version.
 services:
   redis:
-    image: redis:5.0.9
+    # This version should match our Elasticache instances.
+    image: redis:5.0.6
     volumes:
       - /var/lib/redis/data
   channels:
