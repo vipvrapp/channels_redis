@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM 604255211065.dkr.ecr.us-east-2.amazonaws.com/base-alpine:latest
 
 RUN apk update && apk add bash git python3 py3-pip redis vim
 
