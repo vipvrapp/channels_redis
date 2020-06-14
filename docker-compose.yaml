@@ -3,7 +3,7 @@ version: "3.7"
 services:
   redis:
     # This version should match our Elasticache instances.
-    image: 604255211065.dkr.ecr.us-east-2.amazonaws.com/base-redis:latest
+    image: 604255211065.dkr.ecr.us-east-1.amazonaws.com/base-redis:latest
     volumes:
       - /var/lib/redis/data
   channels:
